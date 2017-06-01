@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" http-equiv="Content-Type" content="text/html">
+	<title>Impress Tutorial</title>
+</head>
+<link rel="stylesheet" href="css/impress-demo.css">
+<style>
+	.not-support-message{
+		display: none;
+	}
+	.impress-not-supported .not-support-message{
+		display: block;
+	}
+</style>
+<body class="impress-not-supported">
+	<span style="font-weight: normal;"><div id="impress">
+		<div class="step" data-x="0" data-y="0">
+			My first slide
+		</div>
+		<div class="step" data-x="500" data-y="0">
+			This is slide 2
+		</div>
+		<div class="step" data-x="500" data-y="-400">
+			This is slide 3
+		</div>
+		<div class="step" data-x="500" data-y="-800" data-scale="5">
+			This is slide 4
+		</div>
+		<div class="step" data-x="0" data-y="-800" data-rotate="90" data-scale="6">
+			This is slide 5 and it rotates in.
+		</div>
+		<div class="step" data-x="-2600" data-y="-800" data-rotate-x="30" data-rotate-y="60" data-rotate-z="90" data-scale="4">
+			This is slide 7 and it has a 3D transition AND a scale.
+		</div>
+		<div class="not-support-message">
+			Your browser doesn't support impress.js. Try Chrome or Safari.
+			<p>阁下的浏览器太TM老土了！<b>无法满足impress.js的要求</b>所以呢，你现在看到的就是最垃圾的展示效果~~~</p>
+			<p>为了能够欣赏帅气逼人的效果，还请你使用最先进最牛逼最高大上的浏览器，比如<b>Chrome</b>,<b>Safari</b>,<b>Firefox</b>.</p>
+		</div>
+	</div></span>
+</body>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</html>
